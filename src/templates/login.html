@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+
+{% block body %}
+<div class="container">
+ <div class="form-group">
+   <form class="form" action="{{ url_for ('login')}}" method="post">
+     <label for="username">Username:</label>
+     <input class="form-control" type="text" name="usernsme" value="" placeholder="Enter Username"><br>
+     <label for="password">Password:</label>
+     <input class="form-control" type="password" name="password" value="" placeholder="*******"><br>
+     <input class="btn btn-primary" type="submit" name="" value="Submit">
+   </form>
+ </div>
+
+
+
+</div>
+
+{% endblock %}
